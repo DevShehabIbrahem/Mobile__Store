@@ -6,10 +6,11 @@ import words from "../../words";
 import logo from "../../assests/Logo/Group 2925.svg";
 import "../../css/Navbar/Navbar.css";
 import MobileMenu from "../mobileMenu/MobileMenu";
+import { icons } from "../../data";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
-  const { NavbarList, icons } = words;
+  const { NavbarList } = words;
 
   return (
     <nav>

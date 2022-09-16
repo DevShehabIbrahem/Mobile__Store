@@ -1,6 +1,3 @@
-import { BiSearchAlt2 } from "react-icons/bi";
-import { AiOutlineUser } from "react-icons/ai";
-import { BsMinecartLoaded } from "react-icons/bs";
 import apple from "./assests/Svg/footer.svg";
 import bank from "./assests/details/CIB_Logo.png";
 
@@ -18,8 +15,6 @@ const words = {
     "Services",
     "Locations",
   ],
-
-  icons: [<BiSearchAlt2 />, <AiOutlineUser />, <BsMinecartLoaded />],
 
   exploreProducts: "Explore Products",
 
@@ -40,12 +35,6 @@ const words = {
   paymentBank: [bank, bank, bank, bank],
 
   Memory: "Memory",
-  MemoryArr: [
-    { size: "128 GB", price: 999.0 },
-    { size: "256 GB", price: 999.0 },
-    { size: "512 GB", price: 999.0 },
-    { size: "1T", price: 999.0 },
-  ],
 
   Color: "Color",
 
@@ -53,9 +42,10 @@ const words = {
 
   insurance: "Insurance",
 
-  insuranceArr: [
-    { year: "1 year", price: 99.0 },
-    { year: "2 year", price: 159.0 },
-  ],
+  add_to_cart: " Add to card",
+
+  shipping: "Free shipping, arrives by Tue, Nov 23",
+
+  free: "Free 10-day return window starts Dec 26th Details",
 };
 export default words;

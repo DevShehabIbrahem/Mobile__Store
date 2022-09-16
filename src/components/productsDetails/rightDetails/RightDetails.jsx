@@ -4,6 +4,7 @@ import carimg from "../../../assests/Svg/vuesax-linear-group.svg";
 import Rating from "../../../Rating";
 import cubimg from "../../../assests/Svg/vuesax-linear-convert-3d-cube.svg";
 import "../../../css/productsDetails/rightDetails/RightDetails.css";
+import { MemoryArr, insuranceArr } from "../../../data";
 
 const RightDetails = ({ product }) => {
   const [qty, setQty] = useState(1);
@@ -13,10 +14,11 @@ const RightDetails = ({ product }) => {
     paymentBank,
     Memory,
     Color,
-    insuranceArr,
     insurance,
-    MemoryArr,
     productColor,
+    add_to_cart,
+    shipping,
+    free,
   } = words;
 
   const incress = () => {
@@ -106,18 +108,18 @@ const RightDetails = ({ product }) => {
         </div>
       </div>
       <button className={product?.inStock !== 0 && "blueBtn"}>
-        Add to card
+        {add_to_cart}
       </button>
 
       <div className="details__info">
         <div>
           <img src={carimg} alt="shipping" />
-          <span>Free shipping, arrives by Tue, Nov 23</span>
+          <span>{shipping}</span>
         </div>
 
         <div>
           <img src={cubimg} alt="freedays" />
-          <span>Free 10-day return window starts Dec 26th Details</span>
+          <span>{free}</span>
         </div>
       </div>
     </div>
