@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import words from "../../../words";
 import "../../../css/Products/Product/Product.css";
 import MyImage from "../../shared/MyImage";
-
+import ErrorImage from "../../../assests/Error.jpg";
 const Product = ({ name, img, price, inStock, priceAfterdiscount, id }) => {
   const Navigate = useNavigate();
 
@@ -16,7 +16,7 @@ const Product = ({ name, img, price, inStock, priceAfterdiscount, id }) => {
   return (
     <div className="product__cart" onClick={() => NavigateToDetails(id)}>
       <div className="product__img">
-        <MyImage src={img[0]} alt="product-images" />
+        <MyImage src={img[0] ? img[0] : ErrorImage} alt="product-images" />
       </div>
 
       <div className="product__cart__bottom">
