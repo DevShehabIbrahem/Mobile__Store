@@ -1,0 +1,22 @@
+$red_color: #d63030;
+
+.details__left {
+    display: flex;
+    align-items: center;
+    max-height: 30rem;
+    overflow: hidden;
+    .details__col {
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .details__left {
+        justify-content: center;
+    }
+}

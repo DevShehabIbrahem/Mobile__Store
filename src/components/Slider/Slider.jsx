@@ -9,8 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
-
-import { reg } from "../../api/baseUrl";
+import { reg } from "../../api/Reguest";
 
 const Slider = () => {
   const { data } = useFetch(reg.slider);

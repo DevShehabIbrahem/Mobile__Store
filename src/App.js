@@ -1,14 +1,12 @@
 import "./App.css";
-import Home from "./Pages/Home";
+import { Home, ProductsDetails, Navbar, Footer } from "./components";
 import { Routes, Route } from "react-router-dom";
-import ProductsDetails from "./Pages/ProductsDetails/ProductsDetails";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
 
-import { reg } from "./api/baseUrl";
+
 
 import Usefetch from "./hooks/useFetch";
 import Spinner from "./components/Spinner";
+import { reg } from "./api/Reguest";
 
 function App() {
   const { loading } = Usefetch(reg.products);

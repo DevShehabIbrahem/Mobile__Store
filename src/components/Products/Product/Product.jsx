@@ -15,7 +15,7 @@ const Product = ({ name, img, price, inStock, priceAfterdiscount, id }) => {
 
   return (
     <div className="product__cart" onClick={() => NavigateToDetails(id)}>
-      <div className="product__cart__img">
+      <div className="product__img">
         <img src={img[0]} alt="product-images" />
       </div>
 

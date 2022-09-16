@@ -1,18 +1,22 @@
-import logo from "../../assests/Logo/Group 2925.svg";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import { AiOutlineMenu } from "react-icons/ai";
 import words from "../../words";
-
+import logo from "../../assests/Logo/Group 2925.svg";
 import "./Navbar.scss";
+import MobileMenu from "../mobileMenu/MobileMenu";
 
 const Navbar = () => {
+  const [menu, setMenu] = useState(false);
   const { NavbarList, icons } = words;
 
   return (
     <nav>
       <div className="nav__content">
-        <div className="nav__logo">
+        <Link to="/" className="nav__logo">
           <img src={logo} alt="apple-logo" />
-        </div>
+        </Link>
 
         <div className="nav__list">
           <ul>
@@ -32,7 +36,8 @@ const Navbar = () => {
         </div>
 
         {/* MobileScreen-List */}
-        <AiOutlineMenu className="nav__menu" />
+        <AiOutlineMenu className="nav__menu" onClick={() => setMenu(true)} />
+        {menu && <MobileMenu setMenu={setMenu} />}
       </div>
     </nav>
   );

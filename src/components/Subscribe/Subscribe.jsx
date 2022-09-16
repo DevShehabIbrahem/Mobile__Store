@@ -1,4 +1,3 @@
-import React from "react";
 import "./Subscribe.scss";
 import words from "../../words";
 
