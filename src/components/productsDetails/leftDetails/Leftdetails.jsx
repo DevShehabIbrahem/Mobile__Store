@@ -1,7 +1,6 @@
 import React from "react";
 import "../../../css/productsDetails/leftDetails/LeftDetails.css";
 import MyImage from "../../shared/MyImage";
-import ErrorImage from "../../../assests/Error.jpg";
 
 const Leftdetails = ({ product }) => {
   return (
