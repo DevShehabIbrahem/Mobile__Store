@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import words from "../../../words";
 import "../../../css/Products/Product/Product.css";
-import MyImage from "../../shared/Myimage";
+import MyImage from "../../shared/MyImage";
 
 const Product = ({ name, img, price, inStock, priceAfterdiscount, id }) => {
   const Navigate = useNavigate();

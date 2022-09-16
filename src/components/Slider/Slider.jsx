@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 import { reg } from "../../api/Reguest";
-import MyImage from "../shared/Myimage";
+import MyImage from "../shared/MyImage";
 
 const Slider = () => {
   const { data } = useFetch(reg.slider);

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../css/productsDetails/leftDetails/LeftDetails.css";
-import MyImage from "../../shared/Myimage";
+import MyImage from "../../shared/MyImage";
 
 const Leftdetails = ({ product }) => {
   return (
