@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./Pages/Home";
+import { Routes, Route } from "react-router-dom";
+import ProductsDetails from "./Pages/ProductsDetails/ProductsDetails";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+
+import { reg } from "./api/baseUrl";
+
+import Usefetch from "./hooks/useFetch";
+import Spinner from "./components/Spinner";
 
 function App() {
+  const { loading } = Usefetch(reg.products);
+
+  if (loading) return <Spinner />;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/*" element={<Home />} />
+        <Route path="/product/:id" element={<ProductsDetails />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

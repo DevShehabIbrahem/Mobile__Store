@@ -1,0 +1,33 @@
+//mobile screen
+.mobilescreen {
+    display: grid;
+    .mobilescreen__wrraper {
+        display: grid;
+        grid-template-columns: 220px 220px 220px;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .product__cart {
+            padding: 0 1.2rem;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .mobilescreen {
+        display: grid;
+        .mobilescreen__wrraper {
+            grid-template-columns: 300px;
+        }
+    }
+}
+
+@media (min-width: 621px) and (max-width: 800px) {
+    .mobilescreen {
+        display: grid;
+        .mobilescreen__wrraper {
+            grid-template-columns: 220px 220px;
+        }
+    }
+}

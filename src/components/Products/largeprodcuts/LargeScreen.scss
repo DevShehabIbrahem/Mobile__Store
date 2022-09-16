@@ -1,0 +1,58 @@
+.LargeScreen {
+    .swiper {
+        .swiper-wrapper {
+            .swiper-slide {
+                img {
+                    width: 220px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            z-index: 100;
+        }
+
+        //hide The Main Arrows
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            display: none;
+        }
+
+        //display The Custom  Arrows
+        .swiper-button-prev {
+            top: 93%;
+            left: 41%;
+
+            background-image: url("../../../assests/Svg/ArrowPrev.svg");
+        }
+
+        .swiper-button-next {
+            top: 93%;
+            right: 41%;
+            background-image: url("../../../assests/Svg/ArrowNext.svg");
+        }
+
+        //custom pagination
+        .swiper-pagination {
+            display: flex;
+            background: #fff;
+            max-width: max-content;
+            padding: 5px 21px;
+            border-radius: 12px;
+            position: absolute;
+            left: 50% !important;
+            bottom: 2% !important;
+            transform: translate(-50%, -50%) !important;
+
+            .swiper-pagination-bullet {
+                margin-left: 0.5rem !important;
+                background: rgb(0 0 0 / 52%);
+            }
+        }
+    }
+}
