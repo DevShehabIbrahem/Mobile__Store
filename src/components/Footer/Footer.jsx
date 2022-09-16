@@ -1,5 +1,5 @@
-import "./Footer.scss";
 import words from "../../words";
+import "../../css/Footer/Footer.css";
 
 const Footer = () => {
   const { footerImage, footerCopyRight } = words;

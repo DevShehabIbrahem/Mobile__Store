@@ -1,4 +1,4 @@
-import "./Subscribe.scss";
+import "../../css/Subscribe/Subscribe.css";
 import words from "../../words";
 
 const Subscribe = () => {

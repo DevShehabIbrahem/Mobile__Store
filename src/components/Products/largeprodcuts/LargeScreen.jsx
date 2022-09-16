@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/scss";
-import "swiper/scss/navigation";
-import "swiper/scss/pagination";
-import "./LargeScreen.scss";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "../../../css/Products/largeprodcuts/LargeScreen.css";
 import { Navigation, Pagination } from "swiper";
 
 import Product from "../Product/Product";

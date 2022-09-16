@@ -1,5 +1,5 @@
 import Product from "../Product/Product";
-import "./mobileScreen.scss";
+import "../../../css/Products/mobileProducts/mobileScreen.css";
 
 const Mobilescreen = ({ data }) => {
   return (

@@ -1,4 +1,4 @@
-import "./mobile.scss";
+import "../../css/mobileMenu/mobile.css";
 
 import words from "../../words";
 import { MdNavigateNext } from "react-icons/md";

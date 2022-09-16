@@ -1,0 +1,1 @@
+.details__left{display:flex;align-items:center;max-height:30rem;overflow:hidden}.details__left .details__col{display:flex;flex-direction:column}.details__left .details__col img{width:80px;height:80px}@media (max-width:992px){.details__left{justify-content:center}}

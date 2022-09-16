@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import words from "../../words";
 import logo from "../../assests/Logo/Group 2925.svg";
-import "./Navbar.scss";
+import "../../css/Navbar/Navbar.css";
 import MobileMenu from "../mobileMenu/MobileMenu";
 
 const Navbar = () => {

@@ -1,5 +1,6 @@
 import Products from "../../components/Products/Products";
-import "./ProductsDetails.scss";
+import "../../css/productsDetails/ProductsDetails.css";
+
 import { useParams } from "react-router-dom";
 import Usefetch from "../../hooks/useFetch";
 import Leftdetails from "../../components/productsDetails/leftDetails/Leftdetails";

@@ -1,6 +1,5 @@
-
 import words from "../../words";
-import "./Products.scss";
+import "../../css/Products/Products.css";
 import LargeScreen from "./largeprodcuts/LargeScreen";
 import Mobilescreen from "./mobileProducts/Mobilescreen";
 import Usefetch from "../../hooks/useFetch";

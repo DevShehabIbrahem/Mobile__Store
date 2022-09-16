@@ -1,6 +1,6 @@
 import useFetch from "../../hooks/useFetch";
 
-import "./Slider.scss";
+import "../../css/Slider/Slider.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

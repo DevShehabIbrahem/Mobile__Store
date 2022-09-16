@@ -1,6 +1,6 @@
 import NavLinks from "./NavLinks";
 import { AiOutlineClose } from "react-icons/ai";
-import "./mobile.scss";
+import "../../css/mobileMenu/mobile.css";
 
 const MobileMenu = ({ setMenu }) => {
   return (

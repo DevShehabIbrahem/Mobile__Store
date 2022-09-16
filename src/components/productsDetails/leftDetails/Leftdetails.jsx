@@ -1,5 +1,5 @@
 import React from "react";
-import "./LeftDetails.scss";
+import "../../../css/productsDetails/leftDetails/LeftDetails.css";
 
 const Leftdetails = ({ product }) => {
   return (

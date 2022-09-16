@@ -3,8 +3,7 @@ import words from "../../../words";
 import carimg from "../../../assests/Svg/vuesax-linear-group.svg";
 import Rating from "../../../Rating";
 import cubimg from "../../../assests/Svg/vuesax-linear-convert-3d-cube.svg";
-
-import "./RightDetails.scss";
+import "../../../css/productsDetails/rightDetails/RightDetails.css";
 
 const RightDetails = ({ product }) => {
   const [qty, setQty] = useState(1);
