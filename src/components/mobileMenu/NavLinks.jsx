@@ -1,8 +1,7 @@
 import "./mobile.scss";
 
 import words from "../../words";
-import { Link } from "react-router-dom";
-import { MdOutlineNavigateBefore } from "react-icons/md";
+import { MdNavigateNext } from "react-icons/md";
 
 const NavLinks = () => {
   const { NavbarList } = words;
@@ -11,8 +10,8 @@ const NavLinks = () => {
       {NavbarList.map((n) => (
         <li key={n}>
           <span to="/">
-            <MdOutlineNavigateBefore />
             {n}
+            <MdNavigateNext />
           </span>
         </li>
       ))}
