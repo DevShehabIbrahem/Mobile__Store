@@ -2,6 +2,9 @@ $red_color: #d63030;
 $font_size: 20px;
 
 .product__cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border: 2px solid #ccc;
     cursor: pointer;
     padding: 0rem 1.2rem;
@@ -19,7 +22,6 @@ $font_size: 20px;
 
     .product__cart__title {
         text-align: left;
-        padding-left: 1.5rem;
         text-transform: capitalize;
     }
 
