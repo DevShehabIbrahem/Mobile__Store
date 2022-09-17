@@ -10,7 +10,6 @@ const words = {
     "TV",
     "Accessories",
     "Offers",
-
     "Support",
     "Services",
     "Locations",

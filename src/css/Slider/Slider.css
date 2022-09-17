@@ -1,1 +1,48 @@
-.slider .swiper .swiper-wrapper .swiper-slide img{width:100%;height:100%;object-fit:cover}.slider .swiper .swiper-button-next,.slider .swiper .swiper-button-prev{background-repeat:no-repeat;background-size:contain;background-position:center}.slider .swiper .swiper-button-next:after,.slider .swiper .swiper-button-prev:after{display:none}.slider .swiper .swiper-button-prev{left:16%;background-image:url(../../assests/Svg/ArrowPrev.svg)}.slider .swiper .swiper-button-next{right:16%;background-image:url(../../assests/Svg/ArrowNext.svg)}.slider .swiper .swiper-pagination{display:flex;background:#fff;max-width:max-content;padding:5px 21px;border-radius:12px;position:absolute;left:50%!important;bottom:2%!important;transform:translate(-50%,-50%)!important}.slider .swiper .swiper-pagination .swiper-pagination-bullet{margin-left:.5rem!important;background:rgba(0,0,0,.52)}@media (max-width:920px){.slider .swiper .swiper-button-next,.slider .swiper .swiper-button-prev{display:none!important}.slider .swiper .swiper-pagination .swiper-pagination-bullet{margin-left:.1rem!important}}
+.slider .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider .swiper .swiper-button-prev,
+.slider .swiper .swiper-button-next {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.slider .swiper .swiper-button-prev:after,
+.slider .swiper .swiper-button-next:after {
+  display: none;
+}
+.slider .swiper .swiper-button-prev {
+  left: 16%;
+  background-image: url("../../assests/Svg/ArrowPrev.svg");
+}
+.slider .swiper .swiper-button-next {
+  right: 16%;
+  background-image: url("../../assests/Svg/ArrowNext.svg");
+}
+.slider .swiper .swiper-pagination {
+  display: flex;
+  background: #fff;
+  max-width: max-content;
+  padding: 5px 21px;
+  border-radius: 12px;
+  position: absolute;
+  left: 50% !important;
+  bottom: 2% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.slider .swiper .swiper-pagination .swiper-pagination-bullet {
+  margin-left: 0.5rem !important;
+  background: rgba(0, 0, 0, 0.52);
+}
+
+@media (max-width: 920px) {
+  .slider .swiper .swiper-button-prev,
+.slider .swiper .swiper-button-next {
+    display: none !important;
+  }
+  .slider .swiper .swiper-pagination .swiper-pagination-bullet {
+    margin-left: 0.1rem !important;
+  }
+}

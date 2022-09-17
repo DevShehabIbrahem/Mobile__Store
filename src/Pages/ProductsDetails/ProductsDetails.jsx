@@ -21,7 +21,7 @@ const ProductsDetails = () => {
       <div className="details__wrapper">
         <Leftdetails product={product} />
 
-        <RightDetails product={product} />
+        <RightDetails {...product} />
       </div>
 
       <Products noTitle />

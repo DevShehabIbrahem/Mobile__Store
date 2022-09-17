@@ -1,10 +1,10 @@
 import React from "react";
 import { DynamicStar } from "react-dynamic-star";
 
-const Rating = ({ product }) => {
+const Rating = ({ Stars }) => {
   return (
     <DynamicStar
-      rating={product?.numberOfStars}
+      rating={Stars}
       // emptyStarColor={product?.numberOfStars - 5}
       width={21.69}
       height={20.74}

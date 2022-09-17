@@ -4,9 +4,16 @@ import carimg from "../../../assests/Svg/vuesax-linear-group.svg";
 import Rating from "../../../Rating";
 import cubimg from "../../../assests/Svg/vuesax-linear-convert-3d-cube.svg";
 import "../../../css/productsDetails/rightDetails/RightDetails.css";
+
 import { MemoryArr, insuranceArr } from "../../../data";
 
-const RightDetails = ({ product }) => {
+const RightDetails = ({
+  numberOfReviews,
+  inStock,
+  name,
+  price,
+  numberOfStars,
+}) => {
   const [qty, setQty] = useState(1);
 
   const {
@@ -32,23 +39,21 @@ const RightDetails = ({ product }) => {
   return (
     <div className="details__right">
       <div className="details__name">
-        <h3>{product?.name}</h3>
+        <h3>{name}</h3>
       </div>
 
       <div className="details__rate">
-        <Rating product={product} />
-        <span>({product?.numberOfReviews} Reviews)</span>
+        <Rating Stars={numberOfStars} />
+        <span>({numberOfReviews} Reviews)</span>
       </div>
 
       <div className="details__moredetails">
-        <div
-          className={product?.inStock !== 0 ? "blueprice" : "details__price"}
-        >
-          <span>${product?.price}</span>
+        <div className={inStock !== 0 ? "blueprice" : "details__price"}>
+          <span>${price}</span>
         </div>
 
-        <div className={product?.inStock === 0 ? "out-of-stock" : "in-stock"}>
-          <span>{product?.inStock !== 0 ? "inStock" : "outOfStock"}</span>
+        <div className={inStock === 0 ? "out-of-stock" : "in-stock"}>
+          <span>{inStock !== 0 ? "inStock" : "outOfStock"}</span>
         </div>
       </div>
 
@@ -108,9 +113,7 @@ const RightDetails = ({ product }) => {
         </div>
       </div>
 
-      <button className={product?.inStock !== 0 && "blueBtn"}>
-        {add_to_cart}
-      </button>
+      <button className={inStock !== 0 && "blueBtn"}>{add_to_cart}</button>
 
       <div className="details__info">
         <div>

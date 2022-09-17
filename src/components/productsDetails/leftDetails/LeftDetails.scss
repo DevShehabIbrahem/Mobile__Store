@@ -1,10 +1,14 @@
 $red_color: #d63030;
+$width_container: 28rem;
 
 .details__left {
     display: flex;
     align-items: center;
     max-height: 30rem;
     overflow: hidden;
+    img {
+        width: 17rem;
+    }
     .details__col {
         display: flex;
         flex-direction: column;
@@ -17,6 +21,8 @@ $red_color: #d63030;
 
 @media (max-width: 992px) {
     .details__left {
+        width: $width_container;
+        margin: 0 auto;
         justify-content: center;
     }
 }

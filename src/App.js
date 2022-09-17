@@ -2,8 +2,6 @@ import "./App.css";
 import { Home, ProductsDetails, Navbar, Footer } from "./components";
 import { Routes, Route } from "react-router-dom";
 
-
-
 import Usefetch from "./hooks/useFetch";
 import Spinner from "./components/Spinner";
 import { reg } from "./api/Reguest";
@@ -11,7 +9,9 @@ import { reg } from "./api/Reguest";
 function App() {
   const { loading } = Usefetch(reg.products);
 
+  // Waitnig Data
   if (loading) return <Spinner />;
+
   return (
     <>
       <Navbar />
