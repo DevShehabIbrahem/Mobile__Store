@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 //Custom Hook To Fetch Data
 const Usefetch = (url) => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Usefetch = (url) => {
       .catch((error) => {
         console.log("you have an error ", error);
       });
-  }, []);
+  }, [url]);
 
   return { data, loading };
 };

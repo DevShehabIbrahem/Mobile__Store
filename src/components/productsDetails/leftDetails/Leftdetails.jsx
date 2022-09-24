@@ -1,19 +1,18 @@
 import "../../../css/productsDetails/leftDetails/LeftDetails.css";
-import MyImage from "../../MyImage";
+import Image from "../../Image";
 import Spinner from "../../Spinner";
 
 const Leftdetails = ({ product }) => {
-  console.log(product);
   <Spinner />;
   return (
     <div className="details__left">
       <div className="details__col">
         {product?.img.map((ele, i) => (
-          <MyImage src={ele} alt="product" key={i} />
+          <Image src={ele} alt="product" key={i} />
         ))}
       </div>
 
-      <MyImage src={product?.img[0]} alt="product" />
+      <Image src={product?.img[0]} alt="product" />
     </div>
   );
 };
