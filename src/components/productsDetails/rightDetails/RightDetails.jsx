@@ -113,7 +113,9 @@ const RightDetails = ({
         </div>
       </div>
 
-      <button className={inStock !== 0 && "blueBtn"}>{add_to_cart}</button>
+      <button className={inStock !== 0 ? "blueBtn" : null}>
+        {add_to_cart}
+      </button>
 
       <div className="details__info">
         <div>

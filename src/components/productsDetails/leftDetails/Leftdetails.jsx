@@ -1,9 +1,9 @@
-import React from "react";
 import "../../../css/productsDetails/leftDetails/LeftDetails.css";
-import MyImage from "../../shared/MyImage";
+import MyImage from "../../MyImage";
 import Spinner from "../../Spinner";
 
 const Leftdetails = ({ product }) => {
+  console.log(product);
   <Spinner />;
   return (
     <div className="details__left">
