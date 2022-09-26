@@ -18,8 +18,8 @@
 
 @media (max-width: 992px) {
   .details__left {
-    width: 28rem;
-    margin: 0 auto;
+    max-width: 28rem;
+    margin: 2rem auto;
     justify-content: center;
   }
 }

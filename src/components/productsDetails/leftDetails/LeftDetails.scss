@@ -22,8 +22,8 @@ $width_container: 28rem;
 
 @media (max-width: 992px) {
     .details__left {
-        width: $width_container;
-        margin: 0 auto;
+        max-width: $width_container;
+        margin: 2rem auto;
         justify-content: center;
     }
 }
